@@ -1,0 +1,93 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Comic Sans MS;
+}
+
+body {
+	background-image: url("img/start.jpg");
+	background-size: cover;
+	
+}
+
+p{
+	color: white;
+	font-size: 150%;
+	text-shadow: 2px 2px black;
+}
+
+#text{
+	text-align: center;
+}
+
+button:hover{
+	background: #757575;
+	text-decoration: none;
+}
+
+.knop1{
+	margin-left: 840px;
+	margin-top: 50px;
+	border-radius: 28px;
+	color: #ffffff;
+	font-size: 22px;
+	padding: 10px 25px 10px 25px;
+	border: solid #000000 2px;
+	text-decoration: none;
+	background: #4bcc00;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+}
+
+.knop2a{
+	margin-left: 900px;
+	margin-top: 500px;
+	border-radius: 28px;
+	color: #ffffff;
+	font-size: 22px;
+	padding: 10px 25px 10px 25px;
+	border: solid #000000 2px;
+	text-decoration: none;
+	background: #4bcc00;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	display: none;
+}
+
+.knop2b{
+	margin-left: 1300px;
+	margin-top: 180px;
+	border-radius: 28px;
+	color: #ffffff;
+	font-size: 22px;
+	padding: 10px 25px 10px 25px;
+	border: solid #000000 2px;
+	text-decoration: none;
+	background: #4bcc00;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	display: none;
+}
+
+.knop3{
+	margin-left: 900px;
+	margin-top: 500px;
+	border-radius: 28px;
+	color: #ffffff;
+	font-size: 22px;
+	padding: 10px 25px 10px 25px;
+	border: solid #000000 2px;
+	text-decoration: none;
+	background: #4bcc00;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	display: none;
+}
