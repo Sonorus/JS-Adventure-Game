@@ -76,8 +76,67 @@ button:hover{
 }
 
 .knop3{
-	margin-left: 900px;
+	margin-left: 780px;
+	margin-top: 600px;
+	border-radius: 28px;
+	color: #ffffff;
+	font-size: 22px;
+	padding: 10px 25px 10px 25px;
+	border: solid #000000 2px;
+	text-decoration: none;
+	background: #4bcc00;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	display: none;
+}
+
+#keystone1{
+	display: none;
+	margin-left: 600px;
+	margin-top: 10px;
+}
+
+#keystone2{
+	display: none;
+	margin-left: 650px;
 	margin-top: 500px;
+}
+
+#keystone{
+	display: none;
+}
+
+#spark{
+	display: none;
+	opacity: 0.3;
+	margin-left: 600px;
+	margin-top: 10px;
+	max-height: 110px;
+	max-width: 110px;
+}
+
+.knop3{
+	margin-left: 780px;
+	margin-top: 600px;
+	border-radius: 28px;
+	color: #ffffff;
+	font-size: 22px;
+	padding: 10px 25px 10px 25px;
+	border: solid #000000 2px;
+	text-decoration: none;
+	background: #4bcc00;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	display: none;
+}
+
+.knop4{
+	margin-left: 1200px;
+	margin-top: 200px;
 	border-radius: 28px;
 	color: #ffffff;
 	font-size: 22px;
