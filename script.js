@@ -93,7 +93,7 @@ function level4() {
 	document.getElementById('knop4').style.display="none";
 	document.getElementById('knop5a').style.display="block";
 	document.getElementById('knop5b').style.display="none";
-	document.getElementById('knop6').style.display="block";
+	document.getElementById('knop6a').style.display="block";
 	document.getElementById('keystone2').style.display="none";
 
 	console.log("Level 4!")
@@ -128,12 +128,13 @@ function lvl5boss() {
 	document.getElementById('knop5a').style.display="none";
 	document.getElementById('knop5b').style.display="none";
 	document.getElementById('knop5c').style.display="block";
+	document.getElementById('knop5d').style.display="block";
 	document.getElementById('knop6').style.display="none";
 	document.getElementById('keystone2').style.display="none";
 }
 
 function anrebwin() {
-	document.getElementById('text').innerHTML ='Je hebt Anreb gedood! Bij het overwinnen heb je een kracht erbij gekregen.'
+	document.getElementById('text').innerHTML ='Je hebt Anreb gedood! Bij het verslaan van de woeste Anreb heb je de kracht van het portaal erbij gekregen.'
 	document.body.style.background="url('img/enrabdead.jpg')";
 	document.body.style.backgroundSize='cover';
 	document.getElementById('knop1').style.display="none";
@@ -202,3 +203,4 @@ function level6b() {
 	document.getElementById('knop6a').style.display="none";
 	document.getElementById('keystone2').style.display="none";
 }
+
