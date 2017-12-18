@@ -104,8 +104,10 @@ button:hover{
 	margin-top: 500px;
 }
 
-#keystone{
+#keystone3{
 	display: none;
+	margin-left: 600px;
+	margin-top: 20px;
 }
 
 #spark{
@@ -236,7 +238,7 @@ button:hover{
 	display: none;
 }
 
-.knop6a{
+.knop6{
 	margin-left: 1600px;
 	margin-top: 270px;
 	border-radius: 28px;

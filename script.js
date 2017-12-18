@@ -9,9 +9,9 @@ function level1() {
 	document.getElementById('knop1').style.display="none";
 	document.getElementById('knop2a').style.display="block";
 	document.getElementById('knop2b').style.display="block";
+	document.getElementById('knop6').style.display="none";
 	document.getElementById('keystone1').style.display="none";
 	document.getElementById('keystone2').style.display="none";
-	document.getElementById('keystone3').style.display="none";
 
 	console.log("Level 1!")
 }
@@ -24,11 +24,11 @@ function beneden() {
 	document.getElementById('knop2a').style.display="block";
 	document.getElementById('knop2b').style.display="none";
 	document.getElementById('knop3').style.display="none";
+	document.getElementById('knop6').style.display="none";
 	document.getElementById('spark').innerHTML = "<img src='img/spark.png' alt='Spark' />";
 	document.getElementById('spark').style.display="block";
 	document.getElementById('keystone1').style.display="none";
 	document.getElementById('keystone2').style.display="none";
-	document.getElementById('keystone3').style.display="none";
 
 		document.getElementById('spark').onclick = function(){
 			document.getElementById('spark').style.display="none";
@@ -82,6 +82,7 @@ function level3() {
 	console.log("Level 3!")
 }
 
+
 function level4() {
 	document.getElementById('text').innerHTML ='Welke kant ga je op?';	
 	document.body.style.background="url('img/lvl4.jpg')";
@@ -93,10 +94,19 @@ function level4() {
 	document.getElementById('knop4').style.display="none";
 	document.getElementById('knop5a').style.display="block";
 	document.getElementById('knop5b').style.display="none";
-	document.getElementById('knop6a').style.display="block";
+	document.getElementById('knop6').style.display="block";
 	document.getElementById('keystone2').style.display="none";
 
 	console.log("Level 4!")
+
+		document.getElementById('knop6').onclick = function(){
+			if (Keystone3) {
+				level6();
+			} else {
+				alert("Je hebt niet genoeg keystones.");
+				level4();
+			}
+		}
 }
 
 function level5() {
@@ -114,6 +124,8 @@ function level5() {
 	document.getElementById('knop5d').style.display="none";
 	document.getElementById('knop6').style.display="none";
 	document.getElementById('keystone2').style.display="none";
+
+	console.log("Level 5!")
 }
 
 function lvl5boss() {
@@ -134,7 +146,7 @@ function lvl5boss() {
 }
 
 function anrebwin() {
-	document.getElementById('text').innerHTML ='Je hebt Anreb gedood! Bij het verslaan van de woeste Anreb heb je de kracht van het portaal erbij gekregen.'
+	document.getElementById('text').innerHTML ='Je hebt Anreb gedood! Bij het verslaan van de woeste Anreb heb je de laatste keystone ontvangen!.'
 	document.body.style.background="url('img/enrabdead.jpg')";
 	document.body.style.backgroundSize='cover';
 	document.getElementById('knop1').style.display="none";
@@ -146,9 +158,17 @@ function anrebwin() {
 	document.getElementById('knop5b').style.display="none";
 	document.getElementById('knop5c').style.display="none";
 	document.getElementById('knop5d').style.display="none";
-	document.getElementById('knop5e').style.display="block";
-	document.getElementById('knop6').style.display="none";
+	document.getElementById('knop6').style.display="block";
 	document.getElementById('keystone2').style.display="none";
+	document.getElementById('keystone3').innerHTML = "<img src='img/key3.png' alt='Keystone 3'/>";
+	document.getElementById('keystone3').style.display="block";
+
+			document.getElementById('keystone3').onclick = function(){			
+			document.getElementById('keystone3').style.display="none";
+			alert("Je hebt de derde Keystone!")
+			Keystone3 = true;
+			console.log("Je hebt de 3e keystone!")
+		}	
 }
 
 function anrebfail() {
@@ -164,30 +184,12 @@ function anrebfail() {
 	document.getElementById('knop5b').style.display="none";
 	document.getElementById('knop5c').style.display="none";
 	document.getElementById('knop5d').style.display="none";
-	document.getElementById('knop5e').style.display="none";
 	document.getElementById('knop6').style.display="none";
 	document.getElementById('keystone2').style.display="none";
 }
 
-function level6a() {
-	document.getElementById('text').innerHTML ='Je komt aan bij een portaal wat nog niet geopend is. Keer later terug om verder te gaan'
-	document.body.style.background="url('img/zuid.jpg')";
-	document.body.style.backgroundSize='cover';
-	document.getElementById('knop1').style.display="none";
-	document.getElementById('knop2a').style.display="none";
-	document.getElementById('knop2b').style.display="none";
-	document.getElementById('knop3').style.display="none";
-	document.getElementById('knop4').style.display="none";
-	document.getElementById('knop5a').style.display="none";
-	document.getElementById('knop5b').style.display="none";
-	document.getElementById('knop5c').style.display="none";
-	document.getElementById('knop5c').style.display="none";
-	document.getElementById('knop6a').style.display="none";
-	document.getElementById('keystone2').style.display="none";
-}
-
-function level6b() {
-	document.getElementById('text').innerHTML ='Het portaal is geopend.'
+function level6() {
+	document.getElementById('text').innerHTML ='Het portaal is door middel van de 3 keystones geopend.'
 	document.body.style.background="url('img/zuid.jpg')";
 	document.body.style.backgroundSize='cover';
 	document.getElementById('knop1').style.display="none";
@@ -199,8 +201,10 @@ function level6b() {
 	document.getElementById('knop5b').style.display="none";
 	document.getElementById('knop5c').style.display="none";
 	document.getElementById('knop5d').style.display="none";
-	document.getElementById('knop5e').style.display="none";
-	document.getElementById('knop6a').style.display="none";
+	document.getElementById('knop6').style.display="none";
 	document.getElementById('keystone2').style.display="none";
 }
 
+function level7a() {
+	document.getElementById('text').innerHTMl =''
+}
