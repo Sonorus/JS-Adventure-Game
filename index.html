@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Adventure Game</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <script src="script.js" type="text/javascript"></script>
 <body>
+		<p id="text" class="title">Dalarium: Adventure Game</p>
 
-	<p id="text" class="title">Dalarium: Adventure Game</p>
+			<button id="knop1" class="knop1" onclick="level1()">Ga naar de planeet.</button>
 
+			<button id="knop2a" class="knop2a" onclick="level2()">Volg het spoor.</button>
+			<button id="knop2b" class="knop2b" onclick="beneden()">Kijk beneden.</button>
 
-		<button id="knop1" class="knop1" onclick="level1()">Ga naar de planeet.</button>
+			<button id="knop3" class="knop3" onclick="level3()">Ga het kamp binnen.</button>
 
-		<button id="knop2a" class="knop2a" onclick="level2()">Volg het spoor.</button>
-		<button id="knop2b" class="knop2b" onclick="beneden()">Kijk beneden.</button>
+			<button id="knop4" class="knop4" onclick="level4()">Ga Door</button>
 
-		<button id="knop3" class="knop3" onclick="level3()">Ga het kamp binnen.</button>
-
-		<button id="knop4" class="knop4" onclick="level4()">Ga Door</button>
-
-		<button id="knop5a" class="knop5a" onclick="level5()">Naar het westen.</button>
+			<button id="knop5a" class="knop5a" onclick="level5()">Naar het westen.</button>
 			<button id="knop5b" class="knop5b" onclick="lvl5boss()">Ga Verder.</button>
-				<button id="knop5c" class="knop5c" onclick="anrebwin()">Val aan!</button>
-				<button id="knop5d" class="knop5d" onclick="anrebfail()">Probeer te vluchten.</button>
-		
+			<button id="knop5c" class="knop5c" onclick="anrebwin()">Val aan!</button>
+			<button id="knop5d" class="knop5d" onclick="anrebfail()">Probeer te vluchten.</button>
+			
+			<button id="knop6" class="knop6" onclick="level6()">Naar het zuiden.</button>
 
-		<button id="knop6" class="knop6" onclick="level6()">Naar het zuiden.</button>
+			<button id="knop7" class="knop7" onclick="level7()">Door het portaal</button>
 
-	<button id="knop7" class="knop7" onclick="level7()">Door het portaal</button>
+			<button id="knop8a" class="knop8a" onclick="level8loss()">(Extra Optie) Keer tegen je team.</button>
+			<button id="knop8b" class="knop8b" onclick="level8()">Vecht tegen Icniv</button>
+				<button id="knop8w" class="knop8w" onclick="level8win()">Pak het wapen en bevrijd te planeet.</button>
 
-	<button id="knop8a" class="knop8a" onclick="level8loss()">(Extra Optie) Keer tegen je team.</button>
-	<button id="knop8b" class="knop8b" onclick="level8()">Vecht tegen Icniv</button>
+			<button class="bonus" class="bonus"><a href="https://www.youtube.com/watch?v=IAenOdd_2A8"></a>End Game!</button>
 
-	<button id="knop8w" class="knop8w" onclick="level8win()">Pak het wapen en bevrijd te planeet.</button>
-
-	<button class="bonus" class="bonus"><a href="https://www.youtube.com/watch?v=IAenOdd_2A8"></a>End Game!</button>
-
-
-
-	<div id="spark"></div>
-	<div id="keystone1"></div>
-	<div id="keystone2"></div>
-	<div id="keystone3"></div>
-
-
-</body>
+		<div id="spark"></div>
+		<div id="keystone1"></div>
+		<div id="keystone2"></div>
+		<div id="keystone3"></div>
+	</body>
 </html>
