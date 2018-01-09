@@ -61,7 +61,7 @@ function level2() {
 }
 
 function level3() {
-	document.getElementById('text').innerHTML ='Bij aankomst vertelt Snaaf dat ze net zijn aangevallen. Het kamp is verwoest en alle members zijn vermoord. Hij heeft de steen waar de vijand voor kwam geheim gehouden en geeft het mee.';	
+	document.getElementById('text').innerHTML ='Bij aankomst vertelt Snaaf dat ze net zijn aangevallen. Het kamp is verwoest en alle members zijn vermoord. Hij geeft de steen mee.';	
 	document.body.style.background="url('img/lvl3.jpg')";
 	document.body.style.backgroundSize='cover';
 	document.getElementById('knop1').style.display="none";
@@ -284,7 +284,7 @@ function level8win() {
 }
 
 function level8loss() {
-	document.getElementById('text').innerHTML ='Je hebt je tegen het team gekeerd, maar Icniv heeft hier geen genaden en je ben dood optyve de planeet zit nu vast';
+	document.getElementById('text').innerHTML ='Je hebt je tegen het team gekeerd, maar Icniv heeft hier geen genade voor en dood je alsnog.';
 	document.body.style.background="url('img/wow.jpg')";
 	document.body.style.backgroundSize='cover';
 	document.getElementById('knop1').style.display="none";
