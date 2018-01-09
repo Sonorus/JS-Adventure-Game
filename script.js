@@ -3,17 +3,17 @@ var Keystone2 = false;
 var Keystone3 = false;
 
 function level1() {
-	document.getElementById('text').innerHTML ='Je bent geland op de planeet. Verderop zie je een treinspoor';	
+	document.getElementById('text').innerHTML ='Je bent geland op de planeet. Er heerst een gevaar wat de planeet dreigt te vernietigen. Ga opzoek naar Keystones.';	
 	document.body.style.background="url('img/lvl1.jpg')";
 	document.body.style.backgroundSize='cover';
 	document.getElementById('knop1').style.display="none";
 	document.getElementById('knop2a').style.display="block";
 	document.getElementById('knop2b').style.display="block";
-	document.getElementById('knop6').style.display="none";
 	document.getElementById('keystone1').style.display="none";
 	document.getElementById('keystone2').style.display="none";
+	document.getElementById('keystone3').style.display="none";
 
-	console.log("Level 1!")
+	console.log("Level 1!");
 }
 
 function beneden() {
@@ -24,25 +24,25 @@ function beneden() {
 	document.getElementById('knop2a').style.display="block";
 	document.getElementById('knop2b').style.display="none";
 	document.getElementById('knop3').style.display="none";
-	document.getElementById('knop6').style.display="none";
 	document.getElementById('spark').innerHTML = "<img src='img/spark.png' alt='Spark' />";
 	document.getElementById('spark').style.display="block";
 	document.getElementById('keystone1').style.display="none";
 	document.getElementById('keystone2').style.display="none";
+	document.getElementById('keystone3').style.display="none";
 
 		document.getElementById('spark').onclick = function(){
 			document.getElementById('spark').style.display="none";
 			document.getElementById('keystone1').innerHTML = "<img src='img/key1.png' alt='Keystone 1' />";
 			document.getElementById('keystone1').style.display="block";
 
-			console.log("Je hebt iets ontdekt")
+			console.log("Je hebt iets ontdekt");
 		}
 
 		document.getElementById('keystone1').onclick = function(){
 			document.getElementById('keystone1').style.display="none";
-			alert("Je hebt de eerste Keystone!")
+			alert("Je hebt de eerste Keystone!");
 			Keystone1 = true;
-			console.log("Je hebt de 1e keystone!")
+			console.log("Je hebt de 1e keystone!");
 		}
 }
 
@@ -57,11 +57,11 @@ function level2() {
 	document.getElementById('knop2b').style.display="none";
 	document.getElementById('knop3').style.display="block";
 
-	console.log("Level 2!")
+	console.log("Level 2!");
 }
 
 function level3() {
-	document.getElementById('text').innerHTML ='Bij aankomst vertelt Commander Snaaf dat ze net zijn aangevallen. Het kamp is verwoest en alle members zijn vermoord. Hij heeft de steen waar de vijand voor kwam geheim gehouden en geeft het mee.';	
+	document.getElementById('text').innerHTML ='Bij aankomst vertelt Snaaf dat ze net zijn aangevallen. Het kamp is verwoest en alle members zijn vermoord. Hij heeft de steen waar de vijand voor kwam geheim gehouden en geeft het mee.';	
 	document.body.style.background="url('img/lvl3.jpg')";
 	document.body.style.backgroundSize='cover';
 	document.getElementById('knop1').style.display="none";
@@ -79,7 +79,7 @@ function level3() {
 			console.log("Je hebt de 2e keystone")
 		}
 
-	console.log("Level 3!")
+	console.log("Level 3!");
 }
 
 
@@ -97,14 +97,14 @@ function level4() {
 	document.getElementById('knop6').style.display="block";
 	document.getElementById('keystone2').style.display="none";
 
-	console.log("Level 4!")
+	console.log("Level 4!");
 
 		document.getElementById('knop6').onclick = function(){
 			if (Keystone3) {
 				level6();
 			} else {
 				alert("Je hebt niet genoeg keystones.");
-				level4();
+				beneden();
 			}
 		}
 }
@@ -123,9 +123,11 @@ function level5() {
 	document.getElementById('knop5c').style.display="none";
 	document.getElementById('knop5d').style.display="none";
 	document.getElementById('knop6').style.display="none";
+	document.getElementById('keystone1').style.display="none";
 	document.getElementById('keystone2').style.display="none";
+	document.getElementById('keystone3').style.display="none";
 
-	console.log("Level 5!")
+	console.log("Level 5!");
 }
 
 function lvl5boss() {
@@ -143,6 +145,8 @@ function lvl5boss() {
 	document.getElementById('knop5d').style.display="block";
 	document.getElementById('knop6').style.display="none";
 	document.getElementById('keystone2').style.display="none";
+
+	console.log("ANREB!");
 }
 
 function anrebwin() {
@@ -165,9 +169,9 @@ function anrebwin() {
 
 			document.getElementById('keystone3').onclick = function(){			
 			document.getElementById('keystone3').style.display="none";
-			alert("Je hebt de derde Keystone!")
+			alert("Je hebt de derde Keystone!");
 			Keystone3 = true;
-			console.log("Je hebt de 3e keystone!")
+			console.log("Je hebt de 3e keystone!");
 		}	
 }
 
@@ -186,6 +190,8 @@ function anrebfail() {
 	document.getElementById('knop5d').style.display="none";
 	document.getElementById('knop6').style.display="none";
 	document.getElementById('keystone2').style.display="none";
+
+	console.log("Je ben platgedrukt!");
 }
 
 function level6() {
@@ -202,9 +208,98 @@ function level6() {
 	document.getElementById('knop5c').style.display="none";
 	document.getElementById('knop5d').style.display="none";
 	document.getElementById('knop6').style.display="none";
+	document.getElementById('knop7').style.display="block";
 	document.getElementById('keystone2').style.display="none";
+
+	console.log("Level 6!");
 }
 
-function level7a() {
-	document.getElementById('text').innerHTMl =''
+function level7() {
+	document.getElementById('text').innerHTML ='Dood Icniv om de planeet te bevrijden!';
+	document.body.style.background="url('img/bossbattle.jpg')";
+	document.body.style.backgroundSize='cover';
+	document.getElementById('knop1').style.display="none";
+	document.getElementById('knop2a').style.display="none";
+	document.getElementById('knop2b').style.display="none";
+	document.getElementById('knop3').style.display="none";
+	document.getElementById('knop4').style.display="none";
+	document.getElementById('knop5a').style.display="none";
+	document.getElementById('knop5b').style.display="none";
+	document.getElementById('knop5c').style.display="none";
+	document.getElementById('knop5d').style.display="none";
+	document.getElementById('knop6').style.display="none";
+	document.getElementById('knop7').style.display="none";
+	document.getElementById('knop8a').style.display="block";
+	document.getElementById('knop8b').style.display="block";
+
+	console.log("Level 7!");
+}
+
+
+
+function level8() {
+	document.getElementById('text').innerHTML ='Icniv word vernietigt!';
+	document.body.style.background="url('img/wow.jpg')";
+	document.body.style.backgroundSize='cover';
+	document.getElementById('knop1').style.display="none";
+	document.getElementById('knop2a').style.display="none";
+	document.getElementById('knop2b').style.display="none";
+	document.getElementById('knop3').style.display="none";
+	document.getElementById('knop4').style.display="none";
+	document.getElementById('knop5a').style.display="none";
+	document.getElementById('knop5b').style.display="none";
+	document.getElementById('knop5c').style.display="none";
+	document.getElementById('knop5d').style.display="none";
+	document.getElementById('knop6').style.display="none";
+	document.getElementById('knop7').style.display="none";
+	document.getElementById('knop8a').style.display="none";
+	document.getElementById('knop8b').style.display="none";
+	document.getElementById('knop8w').style.display="block";
+	document.getElementById('knop8l').style.display="none";
+
+	console.log("Level 8!");
+}
+
+function level8win() {
+	document.getElementById('text').innerHTML ='Gefeliciteerd, je hebt gewonnen!'
+	document.body.style.background="url('img/win.jpg')";
+	document.body.style.backgroundSize='cover';
+	document.getElementById('knop1').style.display="none";
+	document.getElementById('knop2a').style.display="none";
+	document.getElementById('knop2b').style.display="none";
+	document.getElementById('knop3').style.display="none";
+	document.getElementById('knop4').style.display="none";
+	document.getElementById('knop5a').style.display="none";
+	document.getElementById('knop5b').style.display="none";
+	document.getElementById('knop5c').style.display="none";
+	document.getElementById('knop5d').style.display="none";
+	document.getElementById('knop6').style.display="none";
+	document.getElementById('knop7').style.display="none";
+	document.getElementById('knop8a').style.display="none";
+	document.getElementById('knop8b').style.display="none";
+	document.getElementById('knop8w').style.display="none";
+	document.getElementById('knop8l').style.display="none";
+
+	console.log("Congratulations fvcker!");
+}
+
+function level8loss() {
+	document.getElementById('text').innerHTML ='Je hebt je tegen het team gekeerd, maar Icniv heeft hier geen genaden en je ben dood optyve de planeet zit nu vast';
+	document.body.style.background="url('img/wow.jpg')";
+	document.body.style.backgroundSize='cover';
+	document.getElementById('knop1').style.display="none";
+	document.getElementById('knop2a').style.display="none";
+	document.getElementById('knop2b').style.display="none";
+	document.getElementById('knop3').style.display="none";
+	document.getElementById('knop4').style.display="none";
+	document.getElementById('knop5a').style.display="none";
+	document.getElementById('knop5b').style.display="none";
+	document.getElementById('knop5c').style.display="none";
+	document.getElementById('knop5d').style.display="none";
+	document.getElementById('knop6').style.display="none";
+	document.getElementById('knop7').style.display="none";
+	document.getElementById('knop8a').style.display="none";
+	document.getElementById('knop8b').style.display="none";
+
+	console.log("Not Congratulations fvcker!");
 }
